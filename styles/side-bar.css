@@ -1,0 +1,124 @@
+/*
+ dark blue: rgb(5, 59, 80)
+ blue: rgb(23, 107, 135)
+ light blue: rgb(100, 204, 197)
+ light grey: rgb(238, 238, 238)
+*/
+
+.side-bar {
+  position: fixed;
+  background-color: rgb(5, 59, 80);
+  width: 290px;
+  top: 0;
+  bottom: 0;
+  box-shadow: 2.5px 0px 5px rgb(99, 99, 99);
+}
+
+.website-name {
+  color: rgb(238, 238, 238);
+  font-size: 26px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  margin-right: 15px;
+}
+
+.menu-div {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  color: rgb(100, 204, 197);
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.menu-div h2 {
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.sidebar-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-list-button {
+  background-color: rgb(100, 204, 197);
+  color: rgb(5, 59, 80);
+  border: 0.5px solid rgb(23, 107, 135);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 2px 7px;
+  box-shadow: 1px 2px 2px rgb(23, 107, 135);
+  transition: all 80ms;
+}
+
+.add-list-button:hover {
+  background-color: rgb(88, 178, 172);
+}
+
+.add-list-button:active {
+  background-color: rgb(38, 111, 135);
+  box-shadow: 1px 2px -2px rgb(112, 229, 221);
+}
+
+.list-menu {
+  margin-bottom: 20px;
+}
+
+.each-list-title {
+  color: rgb(238, 238, 238);
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding-left: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.each-list-title:active {
+  opacity: 0.5;
+}
+
+.chosen-list-title {
+  font-size: 20px;
+  background-color: rgb(238, 238, 238);
+  color: rgb(23, 107, 135);
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 5px 14px;
+}
+
+.edit-delete-div {
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+}
+
+.delete-list-button {
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px 7px;
+  visibility: hidden;
+}
+
+.delete-list-button {
+  background-color: rgb(217, 57, 57);
+  color: rgb(238, 238, 238);
+}
+
+.delete-list-button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.chosen-list-title .delete-list-button {
+  visibility: initial;
+}

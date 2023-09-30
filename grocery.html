@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Grocery List</title>
+    <link rel="stylesheet" href="styles/main-space.css">
+    <link rel="stylesheet" href="styles/side-bar.css">
+    <link rel="stylesheet" href="styles/header.css">
+  </head>
+  <body>
+    <!--the code for the header-->
+    <header>
+      <div class="left-side-header">
+        <img src="image/images.jpeg" class="profile-image">
+        <p class="profile-name">GamaTon</p>
+      </div>
+      <div class="right-side-header">
+        <a class="homepage-anchor">Home</a>
+        <a class="lists-anchor">Lists</a>
+        <a class="products-anchor">Products</a>
+        <a class="settings-anchor">Settings</a>
+      </div>
+    </header>
+    
+    <!--the code for the sidebar-->
+    <aside class="side-bar">
+
+      <!--as long as it works dont touch it-->
+      <div style="text-align: end; padding-right: 20px;">
+        <img class="hamburger-menu-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNlZWVlZWUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTAsNy41djVoNTB2LTV6TTAsMjIuNXY1aDUwdi01ek0wLDM3LjV2NWg1MHYtNXoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4="/>
+      </div>
+
+      <h1 class="website-name">My Grocery List<br>personal project #1</h1>
+      <div class="menu-div">
+        <div class="sidebar-grocery-list">
+          <h2 class="sidebar-subtitle">
+            Lists
+            <button class="add-list-button js-add-list-button">+</button>
+          </h2>
+          
+          <div class="js-list-menu list-menu">
+          </div>
+        </div>
+        <h2>Products</h2>
+        <h2>Settings</h2>
+      </div>
+    </aside>
+    
+    <!--the code for the main space and entering the list items-->
+    <main class="main-space">
+      <div class="edit-list-panel js-edit-list-panel">
+        <div>
+          <h1 class="list-name js-list-title"></h1>
+          <input type="text" class="js-new-name-input name-input" placeholder="Enter list Name">
+        </div>
+        <button class="js-save-new-name save-new-name">Save</button>
+        <button class="js-delete-this-list delete-this-list">Delete</button>
+        <button class="js-edit-list-button edit-list-button">Edit</button>
+        <button class="new-list-button js-new-list-button new-list-button">New list</button>
+      </div>
+
+      <p class="instruction-para">Enter your grocery item and click save.</p>
+
+      <div class="item-input-buttons-div">
+        <input placeholder="Enter something" class="item-name-input js-item-input">
+        
+        <button class="save-item-button js-save-item-button">save</button>
+        <button class="clear-all-items-button js-clear-all-items-button">Clear all</button>
+      </div>
+      <div class="bottom-right-image-div">
+        
+        <img src="image/girl-at-grocery-store.png" class="bottom-right-image">
+
+        <ol class="js-ol-grocery-list">
+        </ol>
+      </div>
+      
+    </main>
+
+    <script src="data/lists.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

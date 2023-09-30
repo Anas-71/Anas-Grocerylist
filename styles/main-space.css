@@ -13,9 +13,11 @@ body {
 
 .main-space {
   margin-left: 300px;
+  margin-top: 10px;
   border: none;
   padding: 60px;
   padding-left: 40px;
+  position: relative;
 }
 
 .edit-list-panel div {
@@ -115,4 +117,16 @@ li {
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(23, 107, 135);
   color: rgb(23, 107, 135);
+}
+
+.bottom-right-image {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 50%;
+  opacity: 0.8;
+}
+
+.bottom-right-image-div {
+  min-height: 240px;
 }

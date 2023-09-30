@@ -1,0 +1,64 @@
+/*
+ dark blue: rgb(5, 59, 80)
+ blue: rgb(23, 107, 135)
+ light blue: rgb(100, 204, 197)
+ light grey: rgb(238, 238, 238)
+*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 290px;
+  right: 0;
+  height: 48px;
+  background-color: rgb(6, 52, 71);
+  color: white;
+  box-shadow: 0px 1px 5px rgb(32, 32, 32);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 30;
+}
+
+.left-side-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding-left: 30px;
+  padding-right: 20px;
+  color: rgb(238, 238, 238);
+}
+
+.profile-image {
+  height: 30px;
+  width: 30px;
+  border: 1.5px solid rgb(100, 204, 197);
+  border-radius: 20px;
+  vertical-align: center;
+}
+
+.profile-name {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.right-side-header {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  color: rgb(238, 238, 238);
+}
+
+.products-anchor,
+.lists-anchor,
+.homepage-anchor,
+.settings-anchor {
+  font-size: 18px;
+  margin: 15px;
+}
+
+.settings-anchor {
+  margin-right: 20px;
+}

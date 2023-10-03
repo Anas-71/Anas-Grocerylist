@@ -46,3 +46,35 @@ function changeListCss(chosenList) {
   }
   previousChosenListElement = newlyChosenElement;
 }
+
+let sidebarStatus = true;
+
+const hamburgerElement = document.querySelector('.js-hamburger-menu-button');
+hamburgerElement.addEventListener('click', () => {
+  if (sidebarStatus) {
+    sidebarOff();
+  }
+  else {
+    sidebarOn();
+  }
+});
+
+function sidebarOff() {
+  sidebarStatus = false;
+  document.querySelector('.js-sidebar')
+    .classList.add('side-bar-off');
+  document.querySelector('.js-main-space')
+    .classList.add('main-space-without-sidebar');
+  document.querySelector('.js-header')
+    .classList.add('header-without-sidebar');
+}
+
+function sidebarOn() {
+  sidebarStatus = true;
+  document.querySelector('.js-sidebar')
+    .classList.remove('side-bar-off');
+  document.querySelector('.js-main-space')
+    .classList.remove('main-space-without-sidebar');
+  document.querySelector('.js-header')
+    .classList.remove('header-without-sidebar'); 
+}

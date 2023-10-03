@@ -8,25 +8,28 @@
   </head>
   <body>
     <!--the code for the header-->
-    <header>
+    <header class="js-header">
       <div class="left-side-header">
         <img src="image/images.jpeg" class="profile-image">
         <p class="profile-name">GamaTon</p>
       </div>
       <div class="right-side-header">
         <a class="homepage-anchor">Home</a>
-        <a class="lists-anchor">Lists</a>
+        <div class="lists-anchor">
+          <a>Lists</a>
+        </div>
         <a class="products-anchor">Products</a>
         <a class="settings-anchor">Settings</a>
       </div>
     </header>
     
     <!--the code for the sidebar-->
-    <aside class="side-bar">
-
+    <aside class="side-bar js-sidebar">
       <!--as long as it works dont touch it-->
-      <div style="text-align: end; padding-right: 20px;">
-        <img class="hamburger-menu-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNlZWVlZWUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTAsNy41djVoNTB2LTV6TTAsMjIuNXY1aDUwdi01ek0wLDM3LjV2NWg1MHYtNXoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4="/>
+      <div class="hamburger-row-div">
+        <button class="js-hamburger-menu-button hamburger-menu-button">
+          <img class="hamburger-menu-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNlZWVlZWUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTAsNy41djVoNTB2LTV6TTAsMjIuNXY1aDUwdi01ek0wLDM3LjV2NWg1MHYtNXoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4="/>
+        </button>
       </div>
 
       <h1 class="website-name">My Grocery List<br>personal project #1</h1>
@@ -46,7 +49,7 @@
     </aside>
     
     <!--the code for the main space and entering the list items-->
-    <main class="main-space">
+    <main class="main-space js-main-space">
       <div class="edit-list-panel js-edit-list-panel">
         <div>
           <h1 class="list-name js-list-title"></h1>

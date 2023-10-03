@@ -11,12 +11,32 @@
   width: 290px;
   top: 0px;
   bottom: 0;
-  box-shadow: 2.5px 0px 5px rgb(99, 99, 99);
+  box-shadow: 2.5px 1px 5px rgb(99, 99, 99);
   z-index: 100;
+  transition: all 100ms;
+}
+
+.hamburger-row-div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 20px;
+  height: 48px;
+}
+
+.hamburger-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.hamburger-menu-button:hover {
+  box-shadow: -1px -1px 7px rgb(132, 132, 132);
 }
 
 .hamburger-menu-img {
-  height: 50px;
+  height: 35px;
   width: 30px;
   text-align: end;
 }
@@ -61,7 +81,7 @@
   border-radius: 8px;
   padding: 2px 7px;
   box-shadow: 1px 2px 2px rgb(23, 107, 135);
-  transition: all 80ms;
+  transition: background-color 100ms;
 }
 
 .add-list-button:hover {
@@ -128,4 +148,26 @@
 
 .chosen-list-title .delete-list-button {
   visibility: initial;
+}
+
+.side-bar-off {
+  height: 48px;
+  width: 60px;
+}
+
+.side-bar-off .menu-div {
+  visibility: hidden;
+}
+
+.side-bar-off .website-name {
+  visibility: hidden;
+}
+
+.side-bar-off .delete-list-button {
+  visibility: hidden;
+}
+
+.side-bar-off .hamburger-row-div {
+  padding-right: 0;
+  margin-right: 10px;
 }

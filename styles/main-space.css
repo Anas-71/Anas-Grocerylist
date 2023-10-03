@@ -18,6 +18,11 @@ body {
   padding: 60px;
   padding-left: 40px;
   position: relative;
+  transition: all 100ms;
+}
+
+.main-space-without-sidebar {
+  margin: 50px;
 }
 
 .edit-list-panel div {
